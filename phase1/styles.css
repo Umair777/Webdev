@@ -1,0 +1,32 @@
+:root{
+    color-scheme: dark;
+}
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    background: #062543;
+    color : #c29a9a;
+    display: grid;
+    place-items: center;
+    padding: 48px 24 px
+
+}
+
+article.card{
+    border: 1px solid #dde4f0;
+    border-radius: 12px;
+    padding: 24px;
+    background: #758bd3;
+    box-shadow: 0 18px 40 px rgba(15, 23, 42, 0.08);
+    max-width: 420px;
+}
+#intro h2{
+    color: #000000;
+    margin-top: 0;
+    background-color: yellow;
+}
+#intro p{
+    color: #1d862b;
+    margin-bottom: 0;
+    background-color: aqua;
+}
