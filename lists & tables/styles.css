@@ -2,5 +2,28 @@ body {
   margin: 0;
   padding: 48px;
   font-family: "Georgia", serif;
-  background: #b9a040;
+  background: #ffffff;
 }
+.pricing{
+  width:100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.pricing th, .pricing td {
+  padding: 12px 20px;
+  text-align: left;
+  
+}
+.pricing thead{
+  background: #f1c40f;
+  color: #fff;
+}
+.pricing tbody tr:nth-child(even){
+  background: #f9f9f9;
+}
+.table-wrapper {
+  overflow-x: auto;
+}
+
