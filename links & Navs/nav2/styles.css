@@ -31,3 +31,8 @@ main{
     margin: 0 auto;
     padding: 40px 24px;
 }
+img  {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
