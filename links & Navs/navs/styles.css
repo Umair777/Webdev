@@ -17,3 +17,32 @@
   background: #04AA6D;
   color: #fff;
 }
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+figure {
+  margin: 0;
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(15,23,42,0.08);
+}
+figure img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+figcaption {
+  margin-top: 12px;
+  color: #475569;
+}
