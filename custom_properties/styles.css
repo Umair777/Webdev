@@ -1,0 +1,28 @@
+:root {
+  color-scheme: light dark;
+  --surface: #ffffff;
+  --text: #0f172a;
+}
+:root[data-theme="dark"] {
+  --surface: #0f172a;
+  --text: #e2e8f0;
+}
+body {
+  margin: 0;
+  background: var(--surface);
+  color: var(--text);
+  font-family: "Inter" , sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+button {
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: none;
+  background: #6366f1;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}

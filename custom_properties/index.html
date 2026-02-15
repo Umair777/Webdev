@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css">
+<script>
+const toggleTheme = () => {
+  const root = document.documentElement;
+  const next = root.dataset.theme === "dark" ? "light" : "dark";
+  root.dataset.theme = next;
+};
+</script>
+</head>
+<body>
+  <button onclick="toggleTheme()">Toggle theme</button>
+</body>
+</html>
