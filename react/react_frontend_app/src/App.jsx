@@ -2,20 +2,38 @@ import { useState } from 'react'
 import './App.css'
 import PageA from './pages/pageA';
 import PageB from './pages/pageB';
+import { MessageContext } from './pages/messageContext';
+
 
 function App() {
-  const [message, setMessage] = useState("");
-
+  const [text, setText] = useState("");
+  
   return (
     <>
     <h1>Happiness Alert!</h1>
-    <PageA setMessage={setMessage} />
-    <PageB message={message} />
+    <MessageContext.Provider value={{text, setText}}>
+    <PageA />
+    <PageB />
+    </MessageContext.Provider>
     </>
   )
 }
 
 export default App
+
+// function App() {
+//   const [message, setMessage] = useState("");
+
+//   return (
+//     <>
+//     <h1>Happiness Alert!</h1>
+//     <PageA setMessage={setMessage} />
+//     <PageB message={message} />
+//     </>
+//   )
+// }
+
+// export default App
  // <>
     //   <div>
     //     <a href="https://vite.dev" target="_blank">
