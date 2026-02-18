@@ -1,11 +1,12 @@
-import react, { useState } from 'react'
-import { useContext } from "react";
-import { MessageContext } from './messageContext';
 
+import { useLocation } from 'react-router-dom';
 
-export default function PageB({ message }) {
-    const {text} = useContext(MessageContext);
-  return (
-    <h1>{text}</h1>
-  );
+export default function PageB() {
+
+    const location = useLocation();
+
+    const message = location.state?.message;
+
+    return <h1>{message}</h1>;
 }
+

@@ -1,30 +1,18 @@
-import react, { useState } from 'react'
-import {useContext} from 'react';
-import { MessageContext } from './messageContext';
+
+import { useNavigate } from "react-router-dom";
 
 export default function PageA() {
-  const { setText } = useContext(MessageContext);
+  const navigate = useNavigate();
+
   return (
-    <>
-    <h1> Hello from Umair</h1>
-    <input
-        onChange={(action) => setText(action.target.value)}
-        placeholder = "Type something"
-    />
-    </>
+    <button
+      onClick={() =>
+        navigate("/pageB", {
+          state: { message: "Hello from Page A!" }
+        })
+      }
+    >
+      Go to Page B
+    </button>
   );
 }
-
-// export default function PageA() {
-//   const { setText } = useContext(MessageContext);
-//   return (
-    // <div>
-    //   <h1>Hello from Umair</h1>
-    //   <input
-    //     onChange={(e) => setMessage(e.target.value)}
-    //     placeholder="Type something"
-    //   />
-    // </div>
-//     
-//   );
-// }
